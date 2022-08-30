@@ -1,0 +1,45 @@
+.navbar {
+    background-color: $color-dark-2;    
+    animation: moveInTop 2s ease-out;
+
+    &__icon {
+        &,
+        &:link,
+        &:visited{
+            color: $color-grey-light-1;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 15rem;
+        transform: translateX(-20%);
+    }
+}
+
+.nav__link {
+    &,
+    &:link,
+    &:visited {
+        color: $color-grey-light-1;
+        text-decoration: none;
+        padding: .2rem 0;
+    }
+}
+
+.active {
+    border-bottom: 2px solid $color-primary;
+}
+
+.navbar-brand {
+    &,
+    &:link,
+    &:visited {
+        color: $color-primary;
+        font-size: 1.5rem;
+    }
+
+}

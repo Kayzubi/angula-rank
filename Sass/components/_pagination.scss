@@ -1,0 +1,43 @@
+.pagination-wrapper {
+    text-align: center;
+}
+
+.pagination{
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    &__number {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: $color-grey-light-1;
+        font-size: 1.3rem;
+        opacity: .4;
+
+        &:hover{
+            color: $color-primary-dark;
+        }
+    }
+
+    &__start,
+    &__end {
+        background-color: $color-primary-dark;
+        color: $color-grey-light-1;
+        font-size: 1.3rem;
+        padding: .5rem;
+        width: 5rem;
+        margin: 0 0;
+    }
+
+
+}
+
+.activeNumber {
+    border-bottom: 2px solid $color-primary;
+    color: $color-primary;
+    font-size: 1.5rem;
+    opacity: 1;
+}

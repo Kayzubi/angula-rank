@@ -1,0 +1,19 @@
+.list__group {
+    list-style: none;
+    padding-left: 1rem;
+    background-color: $color-dark;
+}
+
+.list-item {
+    padding: 1rem;
+    position: relative;
+    border-bottom: 1px solid $color-grey-dark;
+    width: 98%;
+
+    img {
+        width: 2.5rem;
+        border-radius: 50%;
+        border: 1px solid $color-primary;
+        margin-right: 1rem;
+    }
+}

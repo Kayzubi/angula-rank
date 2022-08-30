@@ -1,10 +1,10 @@
  
     export async function get(url, pageNo = 1) {
 
-        let actualUrl= `${url}?q=&per_page=10&page=${pageNo}`;
+        let actualUrl= `${url}?q=&per_page=100&page=${pageNo}`;
         let apiResponse= await fetch(actualUrl, {
           headers: {
-              'authorization': 'token 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'
+              'authorization': 'token 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'
             }
           })
         
@@ -19,20 +19,19 @@
 
       let apiResponse= await fetch(url, {
         headers: {
-            'authorization': 'token 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'
+            'authorization': 'token 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'
           }
         })
       
 
       let apiResults = await apiResponse.json()
       
-      return apiResults ?? []
+      return apiResults
       
   }
 
     export async function getAllRepos(pageNo = 1) {
         const results = await get(this.reposUrl, pageNo);
-        // console.log("Retreiving data from API for page : " + pageNo);
         if (results.length>0) {
           return results.concat(await this.getAllRepos(pageNo+1));
         } else {

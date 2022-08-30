@@ -1,0 +1,27 @@
+.heading {
+    margin: 2rem auto;
+    color: $color-grey-light-2;
+
+    &__primary {
+        animation: moveInLeft 2s ease-out;
+    }
+
+    &__secondary {
+        animation: moveInRight 2s ease-out;
+    }
+}
+
+select {
+    &,
+    &:focus,
+    &::selection {
+        background-color: transparent;
+        padding: .3rem;
+        border-radius: .5rem;
+        border: 1px solid $color-primary-dark;
+        color: $color-grey-light-1;
+    }
+    option {
+        color: #000
+    }
+}
